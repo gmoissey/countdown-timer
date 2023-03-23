@@ -1,12 +1,11 @@
 <script lang='ts'>
-	import CountdowdTimer from './CountdowdTimer.svelte';
+	import CountdowdTimer from '../lib/CountdowdTimer.svelte';
 
-	let backgroundImages : string[] = ['/static/backgrounds/ancientWall.jpeg', '/static/backgrounds/fireWall.gif'];
+	let backgroundImages : string[] = ['/backgrounds/ancientWall.jpeg', '/backgrounds/fireWall.gif'];
 	let backgroundImageIndex : number = 0;
 
 	function handleKeydown(event: KeyboardEvent) {
 		let key = event.key;
-		// if key is numerical
 		if (key >= '0' && key <= '9') {
 			backgroundImageIndex = parseInt(key) - 1;
 		}
@@ -22,7 +21,7 @@
 </main>
 
 <style lang="scss">
-	:body {
+	:global(body) {
 		margin: 0;
 		padding: 0;
 	}

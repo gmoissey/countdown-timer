@@ -65,7 +65,7 @@
 </script>
 
 <svelte:window on:keydown={handleKeydown} />
-<audio src="static/sounds/quizTimer.mp3" bind:this={clockSound} />
+<audio src="/sounds/quizTimer.mp3" bind:this={clockSound} />
 
 <main>
 	<div class="CountdowdTimer">
