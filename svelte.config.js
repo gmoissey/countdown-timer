@@ -10,11 +10,11 @@ const config = {
 	kit: {
 		adapter: adapter({
 			fallback: 'index.html',
-			precompress: false,
+			precompress: false
 		  })
 	},
 	paths: {
-		base: '/countdown-timer/'
+		base: '/countdown-timer'
 	}
 };
 
