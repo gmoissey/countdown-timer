@@ -14,7 +14,7 @@ const config = {
 		  })
 	},
 	paths: {
-		base: '/countdown-timer'
+		base: '/countdown-timer/'
 	}
 };
 
