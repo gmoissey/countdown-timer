@@ -13,6 +13,10 @@
 </script>
 
 <svelte:window on:keydown={handleKeydown} />
+<svelte:head>
+  <base href="/countdown-timer">
+</svelte:head>
+
 
 <main>
 	<div style:--backgroundImage={`url(${backgroundImages[backgroundImageIndex]})`} class="main">
