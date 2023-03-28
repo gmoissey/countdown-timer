@@ -11,10 +11,11 @@ const config = {
 		adapter: adapter({
 			fallback: 'index.html',
 			precompress: false
-		  })
+		})
 	},
 	paths: {
-		base: '/countdown-timer'
+		base: '/countdown-timer',
+		assets: '/countdown-timer'
 	}
 };
 
