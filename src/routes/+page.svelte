@@ -1,8 +1,12 @@
-<script lang='ts'>
+<script lang="ts">
 	import CountdowdTimer from '../lib/CountdowdTimer.svelte';
 
-	let backgroundImages : string[] = ['/backgrounds/ancientWall.jpeg', '/backgrounds/fireWall.gif'];
-	let backgroundImageIndex : number = 0;
+	let backgroundImages: string[] = [
+		'/backgrounds/ancientWall.jpeg',
+		'/backgrounds/elijah_carried_upscaled.jpg',
+		'/backgrounds/fireWall.gif'
+	];
+	let backgroundImageIndex: number = 0;
 
 	function handleKeydown(event: KeyboardEvent) {
 		let key = event.key;
@@ -14,9 +18,8 @@
 
 <svelte:window on:keydown={handleKeydown} />
 <svelte:head>
-  <base href="/countdown-timer">
+	<base href="/countdown-timer" />
 </svelte:head>
-
 
 <main>
 	<div style:--backgroundImage={`url(${backgroundImages[backgroundImageIndex]})`} class="main">
