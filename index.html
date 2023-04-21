@@ -2,29 +2,60 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="/favicon.png" />
+		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link rel="modulepreload" href="/_app/immutable/entry/start.af5baf2c.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/index.c99a6402.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/singletons.f2376c81.js">
-		<link rel="modulepreload" href="/_app/immutable/entry/app.923f44dd.js">
+		<link href="./_app/immutable/assets/_page.a19e2020.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.4db6976b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.c99a6402.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.22fc31a8.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.955d45d9.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.c4091b52.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/layout.svelte.df79043c.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.js.984db11e.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.da46b06b.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_page.svelte.6f91e6a3.js"><!-- HEAD_svelte-6cllt1_START --><base href="/countdown-timer"><!-- HEAD_svelte-6cllt1_END -->
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
+
+
+
+
+
+<main><div class="main svelte-pfuyuf" style="--backgroundImage: url(/backgrounds/ancientWall.jpeg);">
+<audio src="/sounds/quizTimer.mp3"></audio>
+
+<main><div class="CountdowdTimer svelte-tvu6k3"><div class="TimerDigits svelte-tvu6k3" style="--borderPercentage: 1; --color: rgb(0, 0, 0);"><div class="Digit svelte-tvu6k3">6</div>
+				<div class="Digit svelte-tvu6k3">0</div>
+				<div class="Digit svelte-tvu6k3">:</div>
+				<div class="Digit svelte-tvu6k3">0</div>
+				<div class="Digit svelte-tvu6k3">0</div></div></div>
+</main></div>
+</main>
+
+
+			
 			<script>
 				{
-					__sveltekit_1kwtbef = {
+					__sveltekit_g2t4oh = {
 						env: {},
-						base: "",
+						base: new URL(".", location).pathname.slice(0, -1),
 						element: document.currentScript.parentElement
 					};
 
+					const data = [null,null];
+
 					Promise.all([
-						import("/_app/immutable/entry/start.af5baf2c.js"),
-						import("/_app/immutable/entry/app.923f44dd.js")
+						import("./_app/immutable/entry/start.4db6976b.js"),
+						import("./_app/immutable/entry/app.c4091b52.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_1kwtbef.element);
+						kit.start(app, __sveltekit_g2t4oh.element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
 					});
 				}
 			</script>
